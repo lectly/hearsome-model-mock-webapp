@@ -114,3 +114,5 @@ This project is part of Bachelor's Senior Project in Faculty of Engineering, Ale
 - DevOps
 - MLOps
 - Cloud Applications Engineering
+
+[product-screenshot]: images/screenshot.png
