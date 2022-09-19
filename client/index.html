@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link href="./public/styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <title>hearsome</title>
+  </head>
+  <body>
+    <!-- NAV-BAR -->
+    <nav class="navbar navbar-expand-lg bg-brand sticky-top">
+      <div class="container-brand">
+        <a class="brand" href="#">hearsome</a>
+      </div>
+    </nav>
+    <!-- NAV-BAR -->
+    <!-- HERO -->
+    <div class="hero-container" id="hero">
+      <div class="" id="action">
+        <p class="display-4">
+          Speech-to-Text tool that will <br />
+          help you in many tasks you <br />
+          couldn’t even think of!
+        </p>
+        <a href="#trynow" class="btn btn-primary btn-lg"> Try now </a>
+      </div>
+      <img src="./public/hero.png" alt="hero" style="height: 25rem" />
+    </div>
+    <!-- HERO -->
+    <!-- TRANSCRIPTION -->
+    <div id="try-container" class="try-container d-flex flex-column">
+      <h1 id="trynow" style="align-self: center" class="display-4">Try now</h1>
+
+      <div
+        id="options-container"
+        class="d-flex flex-row"
+        style="justify-content: space-around"
+      >
+        <div
+          id="options"
+          class="d-flex flex-column"
+          style="align-items: center; justify-content: center"
+        >
+          <!-- UPLOAD -->
+          <div
+            id="upload"
+            class="d-flex flex-row"
+            style="justify-content: space-around"
+          >
+            <div class="d-flex flex-column">
+              <label class="form-label" for="audioFile"
+                >Select a file to begin transcription</label
+              >
+              <input type="file" class="form-control" id="audioFile" />
+            </div>
+          </div>
+          <!-- UPLOAD -->
+          <!-- <p class="mt-4" style="align-self: start">
+            Or record an audio file to test real-time
+          </p> -->
+          <!-- Record -->
+          <!-- <div id="controls" class="d-flex flex-row w-100">
+            <button id="recordButton" class="btn btn-primary w-100 m-2">
+              Record
+            </button>
+            <button id="stopButton" class="btn btn-primary w-100 m-2" disabled>
+              Stop
+            </button>
+          </div> -->
+          <!-- Record -->
+        </div>
+        <div id="transcription">Your transcription will show here</div>
+      </div>
+    </div>
+    <!-- TRANSCRIPTION -->
+
+    <!-- Scripts -->
+    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
